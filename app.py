@@ -67,6 +67,18 @@ def transcribe(audio_path: str | None, language_choice: str):
 
 DEVICE = "cpu"
 
+
+
+def _supported_md() -> str:
+    langs = ", ".join(f"{name} ({code})" for name, (_native, code) in LANGUAGES.items())
+    return (
+        "### Supported languages\n"
+        "Official list from the [Qwen3-ASR-0.6B model card](https://huggingface.co/Qwen/Qwen3-ASR-0.6B): "
+        "30 languages, all with automatic language identification.\n\n"
+        f"**Languages (30):** {langs}"
+    )
+
+
 theme = gr.themes.Soft(
     primary_hue=gr.themes.colors.blue,
     secondary_hue=gr.themes.colors.slate,
@@ -201,6 +213,7 @@ with gr.Blocks(theme=theme, css=CSS, title=PAGE_TITLE) as demo:
             label="FLEURS samples (test split). Pick one, then press Transcribe. Or use the microphone above.",
             examples_per_page=10,
         )
+    gr.Markdown(_supported_md(), elem_classes=["footer-copy"])
     gr.Markdown(
         f"""
 Samples: [FLEURS](https://huggingface.co/datasets/google/fleurs) test split (CC-BY-4.0).

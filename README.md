@@ -1,4 +1,4 @@
-# Qwen3-ASR Local — multilingual speech recognition on your CPU
+# agentic-coding-speech2text — multilingual speech recognition on your CPU, set up by your coding agent
 
 A local web UI that **identifies the spoken language and transcribes it**, using [Qwen/Qwen3-ASR-0.6B](https://huggingface.co/Qwen/Qwen3-ASR-0.6B). 30 languages. Runs on CPU, offline after setup.
 
@@ -17,8 +17,8 @@ The agent installs everything, downloads the model, runs a self-test and opens t
 Requires Python 3.10–3.12, about 5 GB of disk and 8 GB of RAM.
 
 ```bash
-git clone https://github.com/areffarhadi/qwen3-asr-local.git
-cd qwen3-asr-local
+git clone https://github.com/areffarhadi/agentic-coding-speech2text.git
+cd agentic-coding-speech2text
 python3 -m venv .venv
 .venv/bin/pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu   # Linux/Windows; skip on macOS
 .venv/bin/pip install -r requirements.txt
@@ -35,7 +35,7 @@ On Windows use `.venv\Scripts\python.exe` instead of `.venv/bin/python`.
 .venv/bin/python transcribe.py audio.wav --language Persian  # force a language
 ```
 
-Supported languages: Chinese, English, Cantonese, Arabic, German, French, Spanish, Portuguese, Indonesian, Italian, Korean, Russian, Thai, Vietnamese, Japanese, Turkish, Hindi, Malay, Dutch, Swedish, Danish, Finnish, Polish, Czech, Filipino, Persian, Greek, Romanian, Hungarian, Macedonian.
+Supported languages (official list from the [model card](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)): Chinese, English, Cantonese, Arabic, German, French, Spanish, Portuguese, Indonesian, Italian, Korean, Russian, Thai, Vietnamese, Japanese, Turkish, Hindi, Malay, Dutch, Swedish, Danish, Finnish, Polish, Czech, Filipino, Persian, Greek, Romanian, Hungarian, Macedonian.
 
 ## License
 

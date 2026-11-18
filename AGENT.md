@@ -8,7 +8,7 @@ Do every step below in order. Run the commands yourself. Check each step's resul
 
 - A local web UI (Gradio) for multilingual speech recognition. It identifies the spoken language and transcribes it. 30 languages.
 - Model: [Qwen/Qwen3-ASR-0.6B](https://huggingface.co/Qwen/Qwen3-ASR-0.6B), Apache-2.0. It runs on **CPU**. No GPU and no account or token are needed.
-- Repository: `https://github.com/areffarhadi/qwen3-asr-local`
+- Repository: `https://github.com/areffarhadi/agentic-coding-speech2text`
 
 | Need | Amount |
 |---|---|
@@ -36,11 +36,11 @@ Find out the OS (Linux, macOS or Windows) and the shell. Use the matching comman
 
 ## Step 2 — Get the code
 
-Choose a folder in the user's home directory (for example `~/qwen3-asr-local` or `%USERPROFILE%\qwen3-asr-local`).
+Choose a folder in the user's home directory (for example `~/agentic-coding-speech2text` or `%USERPROFILE%\agentic-coding-speech2text`).
 
 ```bash
-git clone https://github.com/areffarhadi/qwen3-asr-local.git
-cd qwen3-asr-local
+git clone https://github.com/areffarhadi/agentic-coding-speech2text.git
+cd agentic-coding-speech2text
 ```
 
 If the folder already exists, `cd` into it and run `git pull` instead. Run **all following commands from inside this folder**.
@@ -118,7 +118,7 @@ Reply to the user with a short message:
 
 - The UI is running at **http://127.0.0.1:7860**.
 - How to use it: record with the microphone, upload a file, or click one of the 6 sample clips, then press **Transcribe**. The detected language and the transcript are shown. The Language dropdown can force a language instead of auto-detect.
-- How to start it again later: from the `qwen3-asr-local` folder run `.venv/bin/python app.py` (Windows: `.venv\Scripts\python.exe app.py`).
+- How to start it again later: from the `agentic-coding-speech2text` folder run `.venv/bin/python app.py` (Windows: `.venv\Scripts\python.exe app.py`).
 - How to stop it: close the terminal, or stop the `app.py` process (Linux / macOS: `pkill -f "python app.py"`).
 - The self-test result from Step 5.
 
