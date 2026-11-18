@@ -1,0 +1,38 @@
+[
+ {
+  "language": "Chinese",
+  "code": "cmn_hans_cn",
+  "file": "cmn_hans_cn.wav",
+  "seconds": 10.4
+ },
+ {
+  "language": "English",
+  "code": "en_us",
+  "file": "en_us.wav",
+  "seconds": 10.6
+ },
+ {
+  "language": "Arabic",
+  "code": "ar_eg",
+  "file": "ar_eg.wav",
+  "seconds": 8.2
+ },
+ {
+  "language": "German",
+  "code": "de_de",
+  "file": "de_de.wav",
+  "seconds": 10.7
+ },
+ {
+  "language": "French",
+  "code": "fr_fr",
+  "file": "fr_fr.wav",
+  "seconds": 10.2
+ },
+ {
+  "language": "Persian",
+  "code": "fa_ir",
+  "file": "fa_ir.wav",
+  "seconds": 10.7
+ }
+]
